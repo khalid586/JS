@@ -5,4 +5,4 @@ arr.push(5)
 
 for (element of arr){
     console.log(element)
-}
+} 

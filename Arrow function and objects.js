@@ -15,11 +15,12 @@ console.log(person['name']) // accessing object with bracket notation
 console.log(person.shirt) // accessing object with dot notation
 console.log(person.cars[0])
 console.log(person.number)
-console.log(person )
+console.log(person) // It will print the whoel object 
 
 // ES6 arrow function
 
 const introducer =  (name,shirt) => {
+    // This is an object
     const person = {
         Name: name ,
         Shirt: shirt ,
