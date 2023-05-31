@@ -1,51 +1,51 @@
 // Arrow function
-// const sum = (a,b) => a+b 
-// console.log(sum(10,20))
+const sum = (a,b) => a+b 
+console.log(sum(10,20))
 
 // object 
-// let person = {
-//     name: 'khalid',
-//     shirt: 'white',
-//     cars: ['farari','lambo','bmw']
-// }
+let person = {
+    name: 'khalid',
+    shirt: 'white',
+    cars: ['farari','lambo','bmw']
+}
 
-// person.number = 134 // adding properties
+person.number = 134 // adding properties
 
-// console.log(person['name']) // accessing object with bracket notation
-// console.log(person.shirt) // accessing object with dot notation
-// console.log(person.cars[0])
-// console.log(person.number)
-// console.log(person )
+console.log(person['name']) // accessing object with bracket notation
+console.log(person.shirt) // accessing object with dot notation
+console.log(person.cars[0])
+console.log(person.number)
+console.log(person )
 
 // ES6 arrow function
 
-// const introducer =  (name,shirt) => {
-//     const person = {
-//         Name: name ,
-//         Shirt: shirt ,
-//         assets: 100000 , 
-//         liability: 50001,
-//         networth: function() {
-//             return this.assets - this.liability
-//         }
-//     }
+const introducer =  (name,shirt) => {
+    const person = {
+        Name: name ,
+        Shirt: shirt ,
+        assets: 100000 , 
+        liability: 50001,
+        networth: function() {
+            return this.assets - this.liability
+        }
+    }
 
-//     const intro = `Hi, my is ${person.Name} 
-//     and the color of my shirt is ${person.Shirt} and my net worth is ${person.networth()}`
+    const intro = `Hi, my is ${person.Name} 
+    and the color of my shirt is ${person.Shirt} and my net worth is ${person.networth()}`
 
-//     return intro
-// }
+    return intro
+}
 
-// console.log(introducer('khalid','black'))
+console.log(introducer('khalid','black'))
 
-// const letters = 'i am khalid'
+const letters = 'i am khalid'
 
-// for(const letter in letters){ // letter will give index value if we use 'in'
-//     console.log(letter)
-// }
+for(const letter in letters){ // letter will give index value if we use 'in'
+    console.log(letter)
+}
 
-// for(const letter of letters){ // letter will give actual value if we use 'of'
-//     console.log(letter)
-//  }
+for(const letter of letters){ // letter will give actual value if we use 'of'
+    console.log(letter)
+ }
 
 
