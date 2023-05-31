@@ -1,24 +1,37 @@
 // Letter freq
 let LetterFreq = (phrase) => {
-    let freq = {}
+    let letterFreq = {}
     for(let letter of phrase){
-        if(letter in freq) freq[letter]++
-        else                 freq[letter] = 1
+        if(letter in letterFreq) letterFreq[letter]++
+        else                 letterFreq[letter] = 1
     }
     
-    return {freq}
+    return {letterFreq}
 }
 
 console.log(LetterFreq('hey i am khalid'))
 
-// word freq
+// word count
 
-let wordFreq = (phrase) => {
-    let word = 1
+let wordCount = (phrase) => {
+    let words = 1
     for(let letter of phrase){
-        if(letter == ' ') ++word
+        if(letter == ' ') ++words
     }
-    return {word}
+    return {words}
+}
+console.log(wordCount('hey i am khalid'))
+
+// Word Frequency
+let WordFreq = (phrase) => {
+    let wordFreq = {}
+    words = phrase.split(' ')
+    for(let word of words){
+        if(word in wordFreq)  wordFreq[word]++
+        else                  wordFreq[word] = 1
+    }
+    
+    return {wordFreq}
 }
 
-console.log(wordFreq('hey i am khalid'))
+console.log(WordFreq('hey i am khalid'))
